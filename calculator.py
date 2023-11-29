@@ -39,6 +39,7 @@ class Calculator:
         
         #We first create each button one by one with the value we want
         #Using addButton() method which is described below
+        #
         b0 = self.addButton(0)
         b1 = self.addButton(1)
         b2 = self.addButton(2)
