@@ -16,6 +16,8 @@ class CalcGUI:
 
         self.setup_buttons()  # Call method to setup buttons on the calculator
 
+        
+
     # Method to setup the layout of buttons on the calculator
     def setup_buttons(self):
         # Define a list of tuples for button configurations (button text, row, column)
