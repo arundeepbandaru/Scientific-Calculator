@@ -86,36 +86,6 @@ class Calculator:
     
 
 
-
-    def clickButton(self, value):
-        
-        '''
-        DOCSTRING: Method to program the actions that will happen in the calculator after a click of each button
-        INPUT: value of the button (1,2,3,4,5,6,7,8,9,0,+,-,*,/,c,=)
-        OUTPUT: what action will be performed when a particular button is clicked
-        '''
-        
-        #Get the equation that's entered by the user
-        current_equation=str(self.equation.get())
-        
-        #If user clicked "c", then clear the screen
-        if value == 'c':
-            self.equation.delete(-1, END)
-        
-        #If user clicked "=", then compute the answer and display it
-        elif value == '=':
-            answer = str(eval(current_equation))
-            self.equation.delete(-1, END)
-            self.equation.insert(0, answer)
-        
-        #If user clicked any other button, then add it to the equation line
-        else:
-            self.equation.delete(0, END)
-            self.equation.insert(0, current_equation+value)
-
-
-
-
 #Execution
 if __name__=='__main__':
     
