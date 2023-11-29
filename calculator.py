@@ -53,6 +53,7 @@ class CalcGUI:
             self.equation_text.insert(0, current + value)
 
 # This block runs if the script is the main program and not an imported module
+
 if __name__ == '__main__':
     root = Tk()  # Create the main window
     app = CalcGUI(root)  # Instantiate CalcGUI with the main window
